@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+		<meta name="author" content="Coderthemes">
+
+		<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+		<title>Flacto - Responsive Admin Dashboard Template</title>
+
+        <!-- Circlifull chart css -->
+        <link href="assets/plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css"/>
+
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-77043005-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+	</head>
+
+	<body class="fixed-left">
+
+		<!-- Begin page -->
+		<div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="">
+                            <div class="pull-left">
+                                <button class="button-menu-mobile open-left waves-effect waves-light">
+                                    <i class="zmdi zmdi-menu"></i>
+                                </button>
+                                <span class="clearfix"></span>
+                            </div>
+
+                            <!--<form role="search" class="navbar-left app-search pull-left hidden-xs">-->
+			                     <!--<input type="text" placeholder="Search..." class="form-control">-->
+			                     <!--<a href=""><i class="fa fa-search"></i></a>-->
+			                <!--</form>-->
+
+
+                            <ul class="nav navbar-nav navbar-right pull-right">
+
+                                <li class="dropdown user-box">
+                                    <a href="" class="dropdown-toggle waves-effect waves-light profile " data-toggle="dropdown" aria-expanded="true">
+                                        <img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle user-img">
+                                        <!--<div class="user-status away"><i class="zmdi zmdi-dot-circle"></i></div>-->
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)"><i class="ti-user m-r-5"></i> Profile</a></li>
+                                        <li><a href="javascript:void(0)"><i class="ti-settings m-r-5"></i> Settings</a></li>
+                                        <li><a href="javascript:void(0)"><i class="ti-lock m-r-5"></i> Lock screen</a></li>
+                                        <li><a href="javascript:void(0)"><i class="ti-power-off m-r-5"></i> Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <!-- LOGO -->
+                            <div class="">
+                                <div class="text-center">
+                                    <a href="index.html" class="logo">
+                                        <!--<i class="zmdi zmdi-toys icon-c-logo"></i><span>Flacto</span>-->
+                                        <span><img src="assets/images/logo.png" alt="logo" style="height: 22px;"></span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+                    <!--- Divider -->
+                    <div id="sidebar-menu">
+                        <ul>
+
+                        	<li class="text-muted menu-title">Navigation</li>
+
+                            <li class="has_sub">
+                                <a href="index.html" class="waves-effect"><i class="zmdi zmdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-invert-colors"></i> <span> User Interface </span> <span class="menu-arrow"></span> </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="ui-buttons.html">Buttons</a></li>
+                                    <li><a href="ui-cards.html">Cards</a></li>
+                                    <li><a href="ui-typography.html">Typography </a></li>
+                                    <li><a href="ui-checkbox-radio.html">Checkboxs-Radios</a></li>
+                                    <li><a href="ui-materialdesignicons.html">Material Design Icons</a></li>
+                                    <li><a href="ui-font-awesome-icons.html">Font Awesome Icons</a></li>
+                                    <li><a href="ui-themify-icons.html">Themify Icons</a></li>
+                                    <li><a href="ui-modals.html">Modals</a></li>
+                                    <li><a href="ui-images.html">Images</a></li>
+                                    <li><a href="ui-components.html">Components</a>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-case"></i> <span> Admin UI </span> <span class="menu-arrow"></span> </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="admin-masonry.html">Masonry</a></li>
+                                    <li><a href="admin-notification.html">Notification</a></li>
+                                    <li><a href="admin-range-slider.html">Range Slider</a></li>
+                                    <li><a href="admin-sweetalert.html">Sweet Alert</a>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-collection-text"></i><span class="label label-primary pull-right">6</span><span> Forms </span> </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="form-elements.html">Form Elements</a></li>
+                                    <li><a href="form-advanced.html">Advanced Form</a></li>
+                                    <li><a href="form-validation.html">Form Validation</a></li>
+                                    <li><a href="form-wizard.html">Form Wizard</a></li>
+                                    <li><a href="form-summernote.html">Summernote</a></li>
+                                    <li><a href="form-uploads.html">Form Uploads</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-view-list"></i> <span> Tables </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                	<li><a href="tables-basic.html">Basic Tables</a></li>
+                                    <li><a href="tables-datatable.html">Data Table</a></li>
+                                    <li><a href="tables-editable.html">Editable Table</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-chart"></i><span> Charts </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="chart-flot.html">Flot Chart</a></li>
+                                    <li><a href="chart-morris.html">Morris Chart</a></li>
+                                    <li><a href="chart-chartist.html">Chartist Charts</a></li>
+                                    <li><a href="chart-sparkline.html">Sparkline Charts</a></li>
+                                    <li><a href="chart-other.html">Other Chart</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-map"></i><span> Maps </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="map-google.html">Google Maps</a></li>
+                                    <li><a href="map-vector.html">Vector Maps</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="text-muted menu-title">More</li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-collection-item"></i><span class="label label-info pull-right">8</span><span> Pages </span></a>
+                                <ul class="list-unstyled">
+                                	<li><a href="page-starter.html">Starter Page</a></li>
+                                    <li><a href="page-login.html">Login</a></li>
+                                    <li><a href="page-register.html">Register</a></li>
+                                    <li><a href="page-recoverpw.html">Recover Password</a></li>
+                                    <li><a href="page-lock-screen.html">Lock Screen</a></li>
+                                    <li><a href="page-confirm-mail.html">Confirm Mail</a></li>
+                                    <li><a href="page-404.html">Error 404</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-share"></i><span> Multi Level </span> <span class="menu-arrow"></span></a>
+                                <ul>
+                                    <li class="has_sub">
+                                        <a href="javascript:void(0);" class="waves-effect"><span>Menu Level 1.1</span> <span class="menu-arrow"></span></a>
+                                        <ul style="">
+                                            <li><a href="javascript:void(0);"><span>Menu Level 2.1</span></a></li>
+                                            <li><a href="javascript:void(0);"><span>Menu Level 2.2</span></a></li>
+                                            <li><a href="javascript:void(0);"><span>Menu Level 2.3</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><span>Menu Level 1.2</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                </div>
+            </div>
+			<!-- Left Sidebar End -->
+
+			<!-- ============================================================== -->
+			<!-- Start right Content here -->
+			<!-- ============================================================== -->
+			<div class="content-page">
+				<!-- Start content -->
+				<div class="content">
+					<div class="container">
+
+						<!-- Page-Title -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="btn-group pull-right m-t-5 m-b-20">
+                                    <button type="button" class="btn btn-info dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">Settings <span class="m-l-5"><i class="fa fa-cog"></i></span></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <h4 class="page-title">Other Charts</h4>
+                            </div>
+                        </div>
+                        <!-- end row / page title -->
+
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card-box">
+                                    <div class="dropdown pull-right">
+                                        <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <h4 class="header-title m-t-0 m-b-30">Jquery Knob</h4>
+
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-3 text-center">
+                                            <div class="m-b-25">
+                                                <input data-plugin="knob" data-width="150" data-height="150"
+                                                       data-fgColor="#71b6f9" data-bgColor="#636f82" data-displayInput=false value="35"/>
+                                                <h5 class="font-600 text-muted">Disable display input</h5>
+                                            </div>
+                                        </div><!-- end col-->
+                                        <div class="col-sm-6 col-lg-3 text-center">
+                                            <div class="m-b-25">
+                                                <input data-plugin="knob" data-width="150" data-height="150" data-cursor=true
+                                                       data-fgColor="#10c469" data-bgColor="#636f82" value="29"/>
+                                                <h5 class="font-600 text-muted">Cursor mode</h5>
+                                            </div>
+                                        </div><!-- end col-->
+                                        <div class="col-sm-6 col-lg-3 text-center">
+                                            <div class="m-b-25">
+                                                <input data-plugin="knob" data-width="150" data-height="150" data-min="-100"
+                                                       data-fgColor="#f9c851" data-bgColor="#636f82" data-displayPrevious=true value="44"/>
+                                                <h5 class="font-600 text-muted">Display previous value</h5>
+                                            </div>
+                                        </div><!-- end col-->
+                                        <div class="col-sm-6 col-lg-3 text-center">
+                                            <div class="m-b-25">
+                                                <input data-plugin="knob" data-width="150" data-height="150" data-min="-100"
+                                                       data-fgColor="#35b8e0" data-bgColor="#636f82" data-displayPrevious=true data-angleOffset=-125
+                                                       data-angleArc=250 value="44"/>
+                                                <h5 class="font-600 text-muted">Angle offset and arc</h5>
+                                            </div>
+                                        </div><!-- end col-->
+                                    </div><!-- end row -->
+
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-3 text-center">
+                                            <div class="p-20">
+                                                <input data-plugin="knob" data-width="150" data-height="150"
+                                                       data-angleOffset="90" data-linecap="round" data-fgColor="#ff8acc" data-bgColor="#636f82"
+                                                       value="35"/>
+                                                <h5 class="font-600 text-muted">Angle offset</h5>
+                                            </div>
+                                        </div><!-- end col-->
+                                        <div class="col-sm-6 col-lg-3 text-center">
+                                            <div class="p-20">
+                                                <input data-plugin="knob" data-width="150" data-height="150" data-min="-15000"
+                                                       data-displayPrevious=true data-max="15000" data-step="1000"
+                                                       value="-11000" data-bgColor="#636f82" data-fgColor="#5b69bc"/>
+                                                <h5 class="font-600 text-muted">5-digit values, step 1000</h5>
+                                            </div>
+                                        </div><!-- end col-->
+                                        <div class="col-sm-6 col-lg-3 text-center">
+                                            <div class="p-20">
+                                                <input data-plugin="knob" data-width="150" data-height="150" data-linecap=round
+                                                       data-fgColor="#188ae2" data-bgColor="#636f82" value="80" data-skin="tron" data-angleOffset="180"
+                                                       data-readOnly=true data-thickness=".1"/>
+                                                <h5 class="font-600 text-muted">Readonly</h5>
+                                            </div>
+                                        </div><!-- end col-->
+                                        <div class="col-sm-6 col-lg-3 text-center">
+                                            <div class="p-20">
+                                                <input data-plugin="knob" data-width="150" data-height="150"
+                                                       data-displayPrevious=true data-fgColor="#ff5b5b" data-bgColor="#636f82" data-skin="tron"
+                                                       data-cursor=true value="75" data-thickness=".2" data-angleOffset=-125
+                                                       data-angleArc=250 value="44"/>
+                                                <h5 class="font-600 text-muted">Angle offset and arc</h5>
+                                            </div>
+                                        </div><!-- end col-->
+                                    </div><!-- end row-->
+
+                                </div>
+                            </div><!-- end col-->
+                        </div>
+                        <!-- End row -->
+
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="card-box">
+                                    <div class="dropdown pull-right">
+                                        <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <h4 class="header-title m-t-0 m-b-30">Circliful Charts</h4>
+
+                                    <div class="row text-center">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div data-plugin="circliful" class="circliful-chart m-b-30" data-dimension="180"
+                                                 data-text="35%" data-info="New Clients" data-width="20" data-fontsize="24"
+                                                 data-percent="35" data-fgcolor="#64b5f6" data-bgcolor="#636f82"
+                                                 data-fill="#636f82"></div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div data-plugin="circliful" class="circliful-chart m-b-30" data-dimension="180"
+                                                 data-text="35%" data-info="New Clients" data-width="30" data-fontsize="24"
+                                                 data-percent="35" data-fgcolor="#64b5f6" data-bgcolor="#636f82"></div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div data-plugin="circliful" class="circliful-chart m-b-30" data-startdegree="90"
+                                                 data-dimension="180" data-text="35%" data-info="New Clients" data-width="30"
+                                                 data-fontsize="24" data-percent="35" data-fgcolor="#64b5f6"
+                                                 data-bgcolor="#636f82"></div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div data-plugin="circliful" class="circliful-chart m-b-30" data-startdegree="180"
+                                                 data-dimension="180" data-text="35%" data-info="New Clients" data-width="30"
+                                                 data-fontsize="24" data-percent="35" data-fgcolor="#64b5f6"
+                                                 data-bgcolor="#636f82"></div>
+                                        </div>
+
+                                    </div><!-- end row -->
+
+
+                                    <div class="row text-center">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div data-plugin="circliful" class="circliful-chart" data-dimension="200"
+                                                 data-text="35%" data-info="New Clients" data-width="30" data-fontsize="24"
+                                                 data-percent="35" data-fgcolor="#64b5f6" data-bgcolor="#636f82"
+                                                 data-type="half" data-fill="#636f82"></div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div data-plugin="circliful" class="circliful-chart" data-dimension="200"
+                                                 data-text="" data-info="New Clients" data-width="30" data-fontsize="24"
+                                                 data-percent="35" data-fgcolor="#64b5f6" data-bgcolor="#636f82"
+                                                 data-type="half" data-icon="fa-bed"></div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div data-plugin="circliful" class="circliful-chart" data-startdegree="45"
+                                                 data-dimension="200" data-text="50%" data-info="New Clients" data-width="30"
+                                                 data-fontsize="24" data-percent="50" data-fgcolor="#64b5f6"
+                                                 data-bgcolor="#636f82" data-type="half" data-fill="#636f82"></div>
+                                        </div>
+
+                                    </div><!-- end col-->
+                                </div>
+                            </div><!-- end col-->
+
+                        </div> <!-- End row -->
+
+
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <footer class="footer">
+                    2017 © Flacto. Design by <a href="http://coderthemes.com/" target="_blank" class="text-muted">Coderthemes</a>
+                </footer>
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <!-- KNOB JS -->
+        <!--[if IE]>
+        <script type="text/javascript" src="assets/plugins/jquery-knob/excanvas.js"></script>
+        <![endif]-->
+        <script src="assets/plugins/jquery-knob/jquery.knob.js"></script>
+
+        <!-- Circliful -->
+        <script src="assets/plugins/jquery-circliful/js/jquery.circliful.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+			<!-- ============================================================== -->
+			<!-- Start right Content here -->
+			<!-- ============================================================== -->
+			<div class="content-page">
+				<!-- Start content -->
+				<div class="content">
+					<div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card-box">
+                                    <div class="dropdown pull-right">
+                                        <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown"
+                                           aria-expanded="false">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <h4 class="header-title m-t-0 m-b-30">Call Centre Employees</h4>
+
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th></th>
+                                                    <th>Name</th>
+                                                    <!-- <th></th> -->
+                                                    <th>Total Calls</th>
+                                                    <th>Total Minutes</th>
+                                                    <!--th>Average Rating</th-->
+                                                    <th>Overall Sentiment</th>
+<!--                                                     <th>Salary</th>
+ -->                                                </tr>
+                                            </thead>
+                                            <tbody>
+<!--                                                 <table class="table">
+ -->                                                    <!-- <tr>
+                                                        <th>Field 1</th>
+                                                        <th>Field N</th>
+                                                    </tr> -->
+                                                    {% for item in query_results %}
+                                                    <tr>
+                                                        <td>{{ item.eid }}</td>           
+                                                         
+                                                        {% csrf_token %}
+                                                            <td>
+                                                            <!-- <div class="form-group"> -->
+                                                             <td><a href="/calls-per-id/?id={{ item.eid }}">{{ item.name }}</a></td>
+                                                            <!-- </div> -->
+                                                            </td>
+                                                        <td>{{ item.total_calls }}</td>
+                                                        <td>{{ item.total_seconds }}</td>
+                                                        <td>{{ item.sentiment }}</td>
+                                                    </tr>
+                                                    {% endfor %}
+<!--                                                 </table>
+ -->                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div><!-- end col -->
+
+                        </div>
+                        <!-- end row -->
+
+                        
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+{% endblock %}

@@ -1,0 +1,111 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "the", 
+                            1.45, 
+                            1.7
+                        ], 
+                        [
+                            "National", 
+                            1.7, 
+                            2.24
+                        ], 
+                        [
+                            "Weather", 
+                            2.24, 
+                            2.54
+                        ], 
+                        [
+                            "Service", 
+                            2.54, 
+                            3.13
+                        ], 
+                        [
+                            "uh", 
+                            3.13, 
+                            3.35
+                        ]
+                    ], 
+                    "transcript": "the National Weather Service uh "
+                }
+            ], 
+            "final": false
+        }
+    ], 
+    "warnings": [
+        "Unknown arguments: continuous."
+    ]
+}{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.861, 
+                    "timestamps": [
+                        [
+                            "the", 
+                            1.45, 
+                            1.7
+                        ], 
+                        [
+                            "National", 
+                            1.7, 
+                            2.24
+                        ], 
+                        [
+                            "Weather", 
+                            2.24, 
+                            2.54
+                        ], 
+                        [
+                            "Service", 
+                            2.54, 
+                            3.13
+                        ], 
+                        [
+                            "a", 
+                            3.13, 
+                            3.87
+                        ]
+                    ], 
+                    "transcript": "the National Weather Service a ", 
+                    "word_confidence": [
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "National", 
+                            1.0
+                        ], 
+                        [
+                            "Weather", 
+                            0.98
+                        ], 
+                        [
+                            "Service", 
+                            0.976
+                        ], 
+                        [
+                            "a", 
+                            0.572
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "the National Weather Service uh "
+                }, 
+                {
+                    "transcript": "the National Weather Service uh uh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

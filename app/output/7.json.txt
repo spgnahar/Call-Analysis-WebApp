@@ -1,0 +1,134 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "at", 
+                            1.43, 
+                            1.76
+                        ], 
+                        [
+                            "least", 
+                            1.76, 
+                            2.08
+                        ], 
+                        [
+                            "three", 
+                            2.08, 
+                            2.34
+                        ], 
+                        [
+                            "of", 
+                            2.34, 
+                            2.48
+                        ], 
+                        [
+                            "them", 
+                            2.48, 
+                            2.74
+                        ], 
+                        [
+                            "cost", 
+                            2.74, 
+                            3.33
+                        ]
+                    ], 
+                    "transcript": "at least three of them cost "
+                }
+            ], 
+            "final": false
+        }
+    ], 
+    "warnings": [
+        "Unknown arguments: continuous."
+    ]
+}{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.86, 
+                    "timestamps": [
+                        [
+                            "at", 
+                            1.43, 
+                            1.76
+                        ], 
+                        [
+                            "least", 
+                            1.76, 
+                            2.08
+                        ], 
+                        [
+                            "three", 
+                            2.08, 
+                            2.34
+                        ], 
+                        [
+                            "of", 
+                            2.34, 
+                            2.48
+                        ], 
+                        [
+                            "them", 
+                            2.48, 
+                            2.74
+                        ], 
+                        [
+                            "caused", 
+                            2.74, 
+                            3.25
+                        ], 
+                        [
+                            "damage", 
+                            3.25, 
+                            4.1
+                        ]
+                    ], 
+                    "transcript": "at least three of them caused damage ", 
+                    "word_confidence": [
+                        [
+                            "at", 
+                            1.0
+                        ], 
+                        [
+                            "least", 
+                            1.0
+                        ], 
+                        [
+                            "three", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "them", 
+                            1.0
+                        ], 
+                        [
+                            "caused", 
+                            0.437
+                        ], 
+                        [
+                            "damage", 
+                            0.899
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "at least three of them cost damage "
+                }, 
+                {
+                    "transcript": "at least three of them cast damage "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

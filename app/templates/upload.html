@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+			<!-- ============================================================== -->
+			<!-- Start right Content here -->
+			<!-- ============================================================== -->
+			<div class="content-page">
+				<!-- Start content -->
+				<div class="content">
+					<div class="container">
+                        <div class="row">
+                            <form class="form-horizontal m-t-10" action="#" method="POST">
+                        {% csrf_token %}
+                            <td>
+                            <div class="form-group">
+                                <button  class="btn btn-custom waves-effect waves-light btn-sm" id="sa-success" type="submit">Update</button>
+                            </div>
+                        </td>
+                            </form>
+                        </div>
+                        <!-- end row -->
+
+                        
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+{% endblock %}

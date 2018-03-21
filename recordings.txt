@@ -1,0 +1,13 @@
+./recordings/0045/AUD-20180210-WA0039.opus
+./recordings/0045/AUD-20180210-WA0025.opus
+./recordings/0045/AUD-20180210-WA0041.opus
+./recordings/0003/0007.wav
+./recordings/0003/0006.wav
+./recordings/0002/0003.wav
+./recordings/0002/0005.wav
+./recordings/0002/0004.wav
+./recordings/0004/0010.wav
+./recordings/0004/0011.wav
+./recordings/0004/0009.wav
+./recordings/0001/0002.wav
+./recordings/0001/0001.wav

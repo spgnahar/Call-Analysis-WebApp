@@ -1,0 +1,101 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "in", 
+                            0.75, 
+                            1.15
+                        ], 
+                        [
+                            "insuring", 
+                            1.15, 
+                            1.8
+                        ], 
+                        [
+                            "academy", 
+                            1.8, 
+                            2.61
+                        ]
+                    ], 
+                    "transcript": "in insuring academy "
+                }
+            ], 
+            "final": false
+        }
+    ], 
+    "warnings": [
+        "Unknown arguments: continuous."
+    ]
+}{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.322, 
+                    "timestamps": [
+                        [
+                            "in", 
+                            0.75, 
+                            1.15
+                        ], 
+                        [
+                            "insuring", 
+                            1.15, 
+                            1.82
+                        ], 
+                        [
+                            "a", 
+                            1.82, 
+                            1.9
+                        ], 
+                        [
+                            "caddy", 
+                            1.9, 
+                            2.4
+                        ], 
+                        [
+                            "a", 
+                            2.4, 
+                            3.0
+                        ]
+                    ], 
+                    "transcript": "in insuring a caddy a ", 
+                    "word_confidence": [
+                        [
+                            "in", 
+                            0.578
+                        ], 
+                        [
+                            "insuring", 
+                            0.172
+                        ], 
+                        [
+                            "a", 
+                            0.564
+                        ], 
+                        [
+                            "caddy", 
+                            0.435
+                        ], 
+                        [
+                            "a", 
+                            0.194
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "in insuring it had a "
+                }, 
+                {
+                    "transcript": "in insuring academy a "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

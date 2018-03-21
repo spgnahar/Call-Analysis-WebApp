@@ -1,0 +1,143 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "six", 
+                            1.25, 
+                            1.71
+                        ], 
+                        [
+                            "of", 
+                            1.71, 
+                            1.83
+                        ], 
+                        [
+                            "the", 
+                            1.83, 
+                            1.94
+                        ], 
+                        [
+                            "tornado", 
+                            1.94, 
+                            2.42
+                        ], 
+                        [
+                            "struck", 
+                            2.42, 
+                            2.91
+                        ], 
+                        [
+                            "in", 
+                            2.91, 
+                            3.15
+                        ]
+                    ], 
+                    "transcript": "six of the tornado struck in "
+                }
+            ], 
+            "final": false
+        }
+    ], 
+    "warnings": [
+        "Unknown arguments: continuous."
+    ]
+}{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.869, 
+                    "timestamps": [
+                        [
+                            "six", 
+                            1.25, 
+                            1.71
+                        ], 
+                        [
+                            "of", 
+                            1.71, 
+                            1.83
+                        ], 
+                        [
+                            "the", 
+                            1.83, 
+                            1.94
+                        ], 
+                        [
+                            "tornadoes", 
+                            1.94, 
+                            2.5
+                        ], 
+                        [
+                            "struck", 
+                            2.5, 
+                            2.91
+                        ], 
+                        [
+                            "in", 
+                            2.91, 
+                            3.1
+                        ], 
+                        [
+                            "northeast", 
+                            3.1, 
+                            3.67
+                        ], 
+                        [
+                            "Colorado", 
+                            3.67, 
+                            4.46
+                        ]
+                    ], 
+                    "transcript": "six of the tornadoes struck in northeast Colorado ", 
+                    "word_confidence": [
+                        [
+                            "six", 
+                            0.677
+                        ], 
+                        [
+                            "of", 
+                            0.966
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "tornadoes", 
+                            0.532
+                        ], 
+                        [
+                            "struck", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "northeast", 
+                            1.0
+                        ], 
+                        [
+                            "Colorado", 
+                            0.991
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "six of the tornado struck in northeast Colorado "
+                }, 
+                {
+                    "transcript": "sixth of the tornado struck in northeast Colorado "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

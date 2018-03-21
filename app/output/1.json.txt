@@ -1,0 +1,125 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "in", 
+                            0.77, 
+                            1.11
+                        ], 
+                        [
+                            "the", 
+                            1.11, 
+                            1.19
+                        ], 
+                        [
+                            "center", 
+                            1.19, 
+                            1.66
+                        ], 
+                        [
+                            "of", 
+                            1.66, 
+                            1.82
+                        ], 
+                        [
+                            "the", 
+                            1.82, 
+                            1.93
+                        ], 
+                        [
+                            "state", 
+                            1.93, 
+                            2.64
+                        ]
+                    ], 
+                    "transcript": "in the center of the state "
+                }
+            ], 
+            "final": false
+        }
+    ], 
+    "warnings": [
+        "Unknown arguments: continuous."
+    ]
+}{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.977, 
+                    "timestamps": [
+                        [
+                            "in", 
+                            0.77, 
+                            1.11
+                        ], 
+                        [
+                            "the", 
+                            1.11, 
+                            1.19
+                        ], 
+                        [
+                            "center", 
+                            1.19, 
+                            1.66
+                        ], 
+                        [
+                            "of", 
+                            1.66, 
+                            1.82
+                        ], 
+                        [
+                            "the", 
+                            1.82, 
+                            1.93
+                        ], 
+                        [
+                            "state", 
+                            1.93, 
+                            2.71
+                        ]
+                    ], 
+                    "transcript": "in the center of the state ", 
+                    "word_confidence": [
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "center", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            0.955
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "state", 
+                            0.953
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "in the centre of the state "
+                }, 
+                {
+                    "transcript": "in the center of the state of "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

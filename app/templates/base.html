@@ -1,0 +1,212 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <title>On-line</title>
+
+        <!--Morris Chart CSS -->
+        <!--Morris Chart CSS -->
+        <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+        <link href="{% static 'assets/plugins/bootstrap-sweetalert/sweet-alert.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/css/menu.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/css/core.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/css/components.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/css/icons.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/css/pages.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" type="text/css" />
+
+        <script src="{% static 'assets/js/modernizr.min.js' %}"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-77043005-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+
+
+        <!-- njvekhvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load("current", {packages:["corechart"]});
+          google.charts.setOnLoadCallback(drawChart);
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Task', 'Hours per Day'],
+              ['Positive',     6],
+              ['Negative',      2],
+              ['Neutral',  10]
+            ]);
+
+            var options = {
+              pieHole: 0.4,
+              backgroundColor: "transparent",
+              titleTextStyle: { color: 'white' },
+              legendTextStyle: { color: '#FFF' },
+              height:290,
+              width:500,
+              chartArea : { left: "0.0%" }
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+          }
+        </script>
+
+    </head>
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="">
+                            <div class="pull-left">
+                                <button class="button-menu-mobile open-left waves-effect waves-light">
+                                    <i class="zmdi zmdi-menu"></i>
+                                </button>
+                                <span class="clearfix"></span>
+                            </div>
+
+                            <!--<form role="search" class="navbar-left app-search pull-left hidden-xs">-->
+                                 <!--<input type="text" placeholder="Search..." class="form-control">-->
+                                 <!--<a href=""><i class="fa fa-search"></i></a>-->
+                            <!--</form>-->
+
+
+                            <ul class="nav navbar-nav navbar-right pull-right">
+
+                                <li class="dropdown user-box">
+                                    <a href="" class="dropdown-toggle waves-effect waves-light profile " data-toggle="dropdown" aria-expanded="true">
+                                        <img src="{% static 'assets/images/users/avatar-1.jpg' %}" alt="user-img" class="img-circle user-img">
+                                        <!--<div class="user-status away"><i class="zmdi zmdi-dot-circle"></i></div>-->
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        
+                                        <li><a href="/logout/"></i> Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <!-- LOGO -->
+                            <div class="">
+                                <div class="text-center">
+                                    <a href="/dashboard/" class="logo">
+                                        <!--<i class="zmdi zmdi-toys icon-c-logo"></i><span>Flacto</span>-->
+                                        <span><img src="{% static 'assets/images/logo.png' %}" alt="logo" style="height: 22px;"></span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+                    <!--- Divider -->
+                    <div id="sidebar-menu">
+                        <ul>
+
+                            <li class="text-muted menu-title">Navigation</li>
+
+                            <li class="has_sub">
+                                <a href="/dashboard/" class="waves-effect"><i class="zmdi zmdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-invert-colors"></i> <span> Callers </span> <span class="menu-arrow"></span> </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="/callerlist/">Caller List</a></li>
+                                    <li><a href="/summary/">Download Summary</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="/upload/" class="waves-effect"><i class="zmdi zmdi-view-dashboard"></i> <span> Update Database </span> </a>
+                            </li>
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+            
+
+
+        </div>
+        {% block content %}
+        {% endblock %}
+        <!-- END wrapper -->
+            
+
+        
+
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+        <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'assets/js/detect.js' %}"></script>
+        <script src="{% static 'assets/js/fastclick.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.slimscroll.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.blockUI.js' %}"></script>
+        <script src="{% static 'assets/js/waves.js' %}"></script>
+        <script src="{% static 'assets/js/wow.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.nicescroll.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.scrollTo.min.js' %}"></script>
+
+        <!--Morris Chart-->
+        <script src="{% static 'assets/plugins/morris/morris.min.js' %}"></script>
+        <script src="{% static 'assets/plugins/raphael/raphael-min.js' %}"></script>
+
+        <!-- Counter Up  -->
+        <script src="{% static 'assets/plugins/waypoints/lib/jquery.waypoints.js' %}"></script>
+        <script src="{% static 'assets/plugins/counterup/jquery.counterup.min.js' %}"></script>
+
+        <!-- Dashboard init -->
+        <script src="{% static 'assets/pages/jquery.dashboard.js' %}"></script>
+
+
+        <!-- App js -->
+        <script src="{% static 'assets/js/jquery.core.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.app.js' %}"></script>
+
+        <!-- Sweet Alert js -->
+        <script src="{% static 'assets/plugins/bootstrap-sweetalert/sweet-alert.min.js' %}"></script>
+        <script src="{% static 'assets/pages/jquery.sweet-alert.init.js' %}"></script>
+
+
+    </body>
+</html>

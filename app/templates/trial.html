@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<ul class="mui-tabs__bar mui-tabs__bar--justified">
+  <li><a a href="/jargon" data-mui-toggle="tab" data-mui-controls="pane-justified-1">JARGON</a></li>
+  <li><a a href="/forum" data-mui-toggle="tab" data-mui-controls="pane-justified-2">FORUM</a></li>
+  <li class="mui--is-active"><a a href="/trial" data-mui-toggle="tab" data-mui-controls="pane-justified-3">TRIAL</a></li>
+
+</ul>
+<!-- <div class="mui-tabs__pane mui--is-active" id="pane-justified-1">Pane-1 hveq </div> -->
+
+<form method="POST" action="/trySentiment">
+	{% csrf_token %}
+Sentiment: <input type="text" name="sent">
+    <button type="submit">check sentiment</button>
+</form>
+{% if ans %}
+    <tr>
+        <h3>{{ ans }}</h3> 
+    </tr>
+{% endif %}
+
+<form method="POST" action="/keywords">
+  {% csrf_token %}
+Keywords: <input type="text" name="sent">
+    <button type="submit">check keywords</button>
+</form>
+{% if data %}
+    {% for key,value in nero %}
+    <tr>
+    <td> {{ key }} </td>
+        <td> {{ value }} </td>
+   INSIDEEEE
+    </tr>
+  {% endfor %}
+{% endif %}
+
+<form method="POST" action="/tryNER">
+	{% csrf_token %}
+NER: <input type="text" name="sent">
+    <button type="submit">check ner</button>
+</form>
+HELLLOOOOO
+{% if nero %}
+IF KE ANDAR
+{{ nero }}
+{% for key, value, conf in nero %}
+    <tr>
+    <td> {{ key }} </td>
+        <td> {{ value }} </td>
+   INSIDEEEE
+    </tr>
+	{% endfor %}
+{% endif %}
+OUTSIDEEE
+
+<form method="POST" action="/tryTaxonomy">
+	{% csrf_token %}
+Taxonomy: <input type="text" name="sent">
+    <button type="submit">check taxonomy</button>
+</form>
+
+<form method="POST" action="/tryEmotion">
+	{% csrf_token %}
+Emotion: <input type="text" name="sent">
+    <button type="submit">check emotion</button>
+</form>
+
+<form method="POST" action="/tryEmotion">
+	{% csrf_token %}
+Abuse: <input type="text" name="sent">
+    <button type="submit">check if abuse</button>
+</form>
+
+<form method="POST" action="/tryIntent">
+  {% csrf_token %}
+Intent: <input type="text" name="sent">
+    <button type="submit">check Intent</button>
+</form>
+
+{% if answer %}
+IF KE ANDAR
+
+    <tr>
+        <h3>{{answer}}</h3>>
+    </tr>
+{% endif %}
+
+
+{% endblock %}

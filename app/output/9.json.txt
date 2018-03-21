@@ -1,0 +1,166 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "with", 
+                            1.13, 
+                            1.44
+                        ], 
+                        [
+                            "one", 
+                            1.44, 
+                            1.66
+                        ], 
+                        [
+                            "of", 
+                            1.66, 
+                            1.77
+                        ], 
+                        [
+                            "the", 
+                            1.77, 
+                            1.89
+                        ], 
+                        [
+                            "twisters", 
+                            1.89, 
+                            2.38
+                        ], 
+                        [
+                            "hitting", 
+                            2.38, 
+                            2.82
+                        ], 
+                        [
+                            "your", 
+                            2.82, 
+                            3.03
+                        ]
+                    ], 
+                    "transcript": "with one of the twisters hitting your "
+                }
+            ], 
+            "final": false
+        }
+    ], 
+    "warnings": [
+        "Unknown arguments: continuous."
+    ]
+}{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.844, 
+                    "timestamps": [
+                        [
+                            "with", 
+                            1.13, 
+                            1.44
+                        ], 
+                        [
+                            "one", 
+                            1.44, 
+                            1.66
+                        ], 
+                        [
+                            "of", 
+                            1.66, 
+                            1.77
+                        ], 
+                        [
+                            "the", 
+                            1.77, 
+                            1.89
+                        ], 
+                        [
+                            "twisters", 
+                            1.89, 
+                            2.38
+                        ], 
+                        [
+                            "hitting", 
+                            2.38, 
+                            2.85
+                        ], 
+                        [
+                            "a", 
+                            2.85, 
+                            3.05
+                        ], 
+                        [
+                            "junior", 
+                            3.05, 
+                            3.53
+                        ], 
+                        [
+                            "golf", 
+                            3.53, 
+                            3.87
+                        ], 
+                        [
+                            "tournament", 
+                            3.87, 
+                            4.63
+                        ]
+                    ], 
+                    "transcript": "with one of the twisters hitting a junior golf tournament ", 
+                    "word_confidence": [
+                        [
+                            "with", 
+                            0.898
+                        ], 
+                        [
+                            "one", 
+                            0.924
+                        ], 
+                        [
+                            "of", 
+                            0.979
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "twisters", 
+                            1.0
+                        ], 
+                        [
+                            "hitting", 
+                            0.442
+                        ], 
+                        [
+                            "a", 
+                            0.25
+                        ], 
+                        [
+                            "junior", 
+                            0.927
+                        ], 
+                        [
+                            "golf", 
+                            0.99
+                        ], 
+                        [
+                            "tournament", 
+                            0.94
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "with one of the twisters hitting your junior golf tournament "
+                }, 
+                {
+                    "transcript": "with one of the twisters hitting rich junior golf tournament "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

@@ -1,0 +1,230 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div id="wrapper">
+
+<!-- ============================================================== -->
+<!-- Start right Content here -->
+<!-- ============================================================== -->
+<div class="content-page">
+    <!-- Start content -->
+    <div class="content">
+        <div class="container">
+
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">                                <h4 class="page-title">Welcome!</h4>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-box widget-user bg-info border-info">
+                        <img class="" src="{% static 'assets/images/icons/electrical_sensor.svg' %}" title="electrical_sensor.svg">
+                        <div class="text-right">
+                            <h2> <span data-plugin="counterup">73</span></h2>
+                            <h5>Total Calls</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-box widget-user bg-danger border-danger">
+                        <img class="" src="{% static 'assets/images/icons/clock.svg' %}" title="clock.svg">
+                        <div class="text-right">
+                            <h2 data-plugin="counterup">127</h2>
+                            <h5>Total minutes</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-box widget-user bg-purple border-purple">
+                        <img class="" src="{% static 'assets/images/icons/engineering.svg' %}" title="engineering.svg">
+                        <div class="text-right">
+                            <h2 data-plugin="counterup">4</h2>
+                            <h5>Total Employees</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-box widget-user bg-custom border-custom">
+                        <img class="" src="{% static 'assets/images/icons/sales_performance.svg' %}" title="sales_performance.svg">
+                        <div class="text-right">
+                            <h2> $ <span data-plugin="counterup">352</span></h2>
+                            <h5>Total Revenue</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-4">  
+                    <div class="card-box">
+                        
+
+                        <h4 class="header-title m-t-0">Sentiment</h4>
+
+
+                        <div class="row text-center m-t-30">
+                            <div class="col-xs-6">
+                                <h3 data-plugin="counterup">6</h3>
+                                <p class="text-muted text-overflow">Total Positive</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 data-plugin="counterup">2</h3>
+                                <p class="text-muted text-overflow">Total Negative</p>
+                            </div>
+                        </div>
+
+                        <div class="text-center m-t-10">
+
+                            <div id="donutchart"></div>
+                            
+                        </div>
+                    </div>
+                </div><!-- end col -->
+
+                <div class="col-lg-8">
+                    <div class="card-box">
+                        
+                        <h4 class="header-title m-t-0">Intent</h4>
+
+                        <div class="row text-center m-t-30">
+                            <div class="col-xs-4">
+                                <h3 data-plugin="counterup">18</h3>
+                                <p class="text-muted text-overflow">Sales (%)</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <h3 data-plugin="counterup">49</h3>
+                                <p class="text-muted text-overflow" title="Open Compaign">Feedback (%)</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <h3 data-plugin="counterup">33</h3>
+                                <p class="text-muted text-overflow">Query (%)</p>
+                            </div>
+                        </div>
+
+                        <div id="dashboard-stacked-chart" style="height: 280px;" class="m-t-10"></div>
+                    </div>
+                </div><!-- end col -->
+
+            </div>
+            <!-- end row -->
+
+
+            <div class="row">
+                
+
+                <div class="col-lg-12">
+                    <div class="card-box">
+                        <div class="dropdown pull-right">
+                            <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown"
+                               aria-expanded="false">
+                                <i class="zmdi zmdi-more-vert"></i>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+
+                        <h4 class="header-title m-t-0 m-b-30">Latest Calls</h4>
+
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433,060</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+
+            </div>
+            <!-- end row -->
+
+
+
+        </div> <!-- container -->
+
+    </div> <!-- content -->
+
+</div>
+<!-- ============================================================== -->
+<!-- End Right content here -->
+<!-- ============================================================== -->
+</div>
+{% endblock %}
