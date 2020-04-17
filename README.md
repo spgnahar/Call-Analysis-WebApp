@@ -13,3 +13,15 @@ The website has the following functionalities:
 3. Keywords are recognized, type of text is recognized.
 4. Per employee data can also be generated.
 5. Not only that, a pdf report can also be generated at the click of a button to get the overall review of the employee based on all the calls he/she has made uptil now.
+
+![alt text](https://github.com/spgnahar/Call-Analysis-WebApp/tree/master/Screenshots/callerlist.png)
+
+![alt text](https://github.com/spgnahar/Call-Analysis-WebApp/tree/master/Screenshots/dashboard.png)
+
+![alt text](https://github.com/spgnahar/Call-Analysis-WebApp/tree/master/Screenshots/summary.png)
+
+![alt text](https://github.com/spgnahar/Call-Analysis-WebApp/tree/master/Screenshots/summdoc.png)
+
+![alt text](https://github.com/spgnahar/Call-Analysis-WebApp/tree/master/Screenshots/summdoc2.png)
+
+![alt text](https://github.com/spgnahar/Call-Analysis-WebApp/tree/master/Screenshots/update.png)
